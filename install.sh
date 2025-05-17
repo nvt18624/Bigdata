@@ -20,7 +20,7 @@ sed -i "s|^log.dirs=/tmp/kafka-logs.*|log.dirs=/tmp/kafka-logs-$1|" /opt/kafka/c
 eval "broker_ip=\$broker${1}_ip"
 sed -i "s|^#listeners=PLAINTEXT:.*|listeners=PLAINTEXT://0.0.0.0:9092|" /opt/kafka/config/server.properties
 sed -i "s|^.*advertised.listeners=PLAINTEXT:.*|advertised.listeners=PLAINTEXT://${broker_ip}:9092|" /opt/kafka/config/server.properties
-nohup bin/kafka-server-start.sh config/server.properties &
+nohup /opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties &
 
 } || {
 ## schema -regsitry
