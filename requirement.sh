@@ -1,3 +1,4 @@
+#! /bin/bash
 which java > /dev/null 2>&1
 
 [ ! $? -ne 0 ] || {
