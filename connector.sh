@@ -1,3 +1,4 @@
+#! /bin/bash
 # Tạo thư mục secrets nếu chưa có
 [ ! -d /opt/kafka/secrets ] && mkdir /opt/kafka/secrets
 [ ! -d /opt/kafka/connector-config ] && mkdir /opt/kafka/connector-config

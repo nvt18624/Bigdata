@@ -1,13 +1,15 @@
+#! /bin/bash
 ./requirement.sh
 source env.sh
 
 [ -d /opt/kafka ] || {
+
 path=$(pwd)
 wget https://dlcdn.apache.org/kafka/3.9.0/kafka_2.13-3.9.0.tgz 
-
 tar -xvzf kafka_2.13-3.9.0.tgz > /dev/null && sudo mv kafka_2.13-3.9.0 /opt/kafka > /dev/null
 echo "Successfull install kafka"
 rm -rf "$path/kafka_2.13-3.9.0.tgz"
+
 }
 
 cd /opt/kafka 
