@@ -37,8 +37,8 @@ cd Bigdata
 chmod +x install.sh env.sh requirement.sh connector.sh flink.sh
 # 2. Create virtual environment in each machine and upload bq-key.json to broker1 and flink: In the env.sh, subtitute variables: ip public, project id, dataset ...
 source env.sh
-scp -i <path_to_private_key> <path_to_bq-key.json> <username>@<ip_broker1> 
-scp -i <path_to_private_key> <path_to_bq-key.json> <username>@<ip_flink> 
+scp -i <path_to_private_key> <path_to_bq-key.json> <username>@<ip_broker1>:/opt/kafka/secrets/
+scp -i <path_to_private_key> <path_to_bq-key.json> <username>@<ip_flink>:/opt/flink/secrets 
 # 3. In zookeeper machine 
 ./install.sh
 # 4. In broker machine

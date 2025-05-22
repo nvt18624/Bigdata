@@ -12,9 +12,10 @@ cp -r ~/Bigdata/plugins /opt/kafka/
 
 # Ghi file config Kafka Connect
 cd /opt/kafka/
-bin/kafka-topics.sh --bootstrap-server localhost:9093 --create --topic connect-offsets --replication-factor 3 --partitions 1
-bin/kafka-topics.sh --bootstrap-server localhost:9093 --create --topic connect-configs --replication-factor 3 --partitions 1
-bin/kafka-topics.sh --bootstrap-server localhost:9093 --create --topic connect-status --replication-factor 3 --partitions 1
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic ${topic_send} --replication-factor 3 --partitions 1
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic connect-offsets --replication-factor 3 --partitions 1
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic connect-configs --replication-factor 3 --partitions 1
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic connect-status --replication-factor 3 --partitions 1
 
 cat > config/connect-distributed.properties << 'EOF'
 bootstrap.servers=localhost:9092
