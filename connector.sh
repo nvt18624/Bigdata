@@ -17,7 +17,7 @@ cd /opt/kafka/
 # bin/kafka-topics.sh --bootstrap-server localhost:9093 --create --topic connect-status --replication-factor 3 --partitions 1
 
 cat > config/connect-distributed.properties << 'EOF'
-bootstrap.servers=localhost:9093
+bootstrap.servers=localhost:9092
 group.id=connect-cluster
 
 # Chỉ định nơi lưu trữ offset, status, config
