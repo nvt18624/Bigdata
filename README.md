@@ -21,7 +21,7 @@ This is project for bigdata project with kafka, flink simulation. This project s
 - Google cloud platfrom account
 - 6 virtual machine running
 - OS: Ubuntu or Debian
-- Bigquery admin json file: If haven't, go to `IAM & Admin` in GCP and create grant acess with role `BigQuery Data Editor, BigQuery Data Owner, BigQuery Job User` and install file json with name: `bq-key.json`
+- Bigquery admin json file: If haven't, go to `IAM & Admin` and go to `service account` in GCP and create grant acess with role `BigQuery Data Editor, BigQuery Data Owner, BigQuery Job User` and install file json with name: `bq-key.json` and upload to the folder `secrets` in `/opt/kafka/secrets/` in broker1 machine and `/opt/flink/secrets/` in flink machine
 - Set firerull for open TCP port `8081, 2181, 9092`
 - `git` and `pip` in virtual machine if dont have can install: 
 ```bash

@@ -54,7 +54,7 @@ schema_str = """
 }
 """
 
-schema_registry_conf = {'url': 'http://' + os.environ.get('zookeeper_ip', 'localhost') + '':8081'}
+schema_registry_conf = {'url': 'http://' + os.environ.get('zookeeper_ip', 'localhost') + ':8081'}
 schema_registry_client = SchemaRegistryClient(schema_registry_conf)
 avro_serializer = AvroSerializer(schema_registry_client, schema_str)
 
