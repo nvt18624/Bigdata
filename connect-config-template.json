@@ -6,8 +6,6 @@
     "topics": "${topic_send}",
     "project": "${project_id}",
     "defaultDataset": "${dataset}",
-    "datasets": ".*=kafka_sink",
-    "topicsToTables": "input=${topic_send}",
     "keyfile": "/opt/kafka/secrets/*.json",
     "autoCreateTables": "true",
     "sanitizeTopics": "false",

@@ -43,5 +43,4 @@ sudo sed -i "s|^kafkastore.bootstrap.servers=PLAINTEXT://.*|kafkastore.bootstrap
 }
 
 # Install connector if borker is 1 
-[ "$1" -eq 1 ] 2>/dev/null && $(bash ~/Bigdata/connector.sh)
-echo "Move plugins complete"
+[ "$1" -eq 1 ] 2>/dev/null && $(bash ~/Bigdata/connector.sh) && echo "Move plugins complete"
