@@ -6,6 +6,7 @@ tar -xvzf flink-1.20.1-bin-scala_2.12.tgz
 mv flink-1.20.1-bin-scala_2.12.tgz /opt/flink
 mv ~/Bigdata/flink.py /opt/flink
 mv ~/Bigdata/flink_requirement.txt /opt/flink
+mv ~/Bigdata/flink_jar/* /opt/flink/lib
 
 rm -rf ~/flink-1.20.1-bin-scala_2.12*
 

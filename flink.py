@@ -68,19 +68,19 @@ def main():
 
     # Add Kafka and Avro dependencies
     t_env.get_config().set("pipeline.jars",
-        "file:///opt/flink-1.20.1/lib/flink-connector-kafka-3.4.0-1.20.jar;"
-        "file:///opt/flink-1.20.1/lib/kafka-clients-3.7.0.jar;"
-        "file:///opt/flink-1.20.1/lib/flink-avro-1.20.1.jar;"
-        "file:///opt/flink-1.20.1/lib/flink-avro-confluent-registry-1.20.1.jar;"
-        "file:///opt/flink-1.20.1/lib/kafka-schema-registry-client-7.5.0.jar;"
-        "file:///opt/flink-1.20.1/lib/kafka-avro-serializer-7.5.0.jar;"
-        "file:///opt/flink-1.20.1/lib/common-config-7.5.0.jar;"
-        "file:///opt/flink-1.20.1/lib/common-utils-7.5.0.jar;"
-        "file:///opt/flink-1.20.1/lib/avro-1.11.3.jar;"
-        "file:///opt/flink-1.20.1/lib/jackson-databind-2.12.7.jar;"
-        "file:///opt/flink-1.20.1/lib/jackson-core-2.12.7.jar;"
-        "file:///opt/flink-1.20.1/lib/jackson-annotations-2.12.7.jar;"
-        "file:///opt/flink-1.20.1/lib/guava-31.1-jre.jar")
+        "file:///opt/flink/lib/flink-connector-kafka-3.4.0-1.20.jar;"
+        "file:///opt/flink/lib/kafka-clients-3.7.0.jar;"
+        "file:///opt/flink/lib/flink-avro-1.20.1.jar;"
+        "file:///opt/flink/lib/flink-avro-confluent-registry-1.20.1.jar;"
+        "file:///opt/flink/lib/kafka-schema-registry-client-7.5.0.jar;"
+        "file:///opt/flink/lib/kafka-avro-serializer-7.5.0.jar;"
+        "file:///opt/flink/lib/common-config-7.5.0.jar;"
+        "file:///opt/flink/lib/common-utils-7.5.0.jar;"
+        "file:///opt/flink/lib/avro-1.11.3.jar;"
+        "file:///opt/flink/lib/jackson-databind-2.12.7.jar;"
+        "file:///opt/flink/lib/jackson-core-2.12.7.jar;"
+        "file:///opt/flink/lib/jackson-annotations-2.12.7.jar;"
+        "file:///opt/flink/lib/guava-31.1-jre.jar")
 
     create_bigquery_table()
 
